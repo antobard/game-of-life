@@ -1,0 +1,36 @@
+:root {
+    --cellSize: 13px;
+    --cellBorder: 1px;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    border: 2px solid;
+}
+
+table:hover {
+    cursor: pointer;
+}
+
+td {
+    width: var(--cellSize);
+    height: var(--cellSize);
+    box-sizing: border-box;
+    border: var(--cellBorder) solid grey;
+}
+
+td.alive {
+    background-color: black;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Game of Life</title>
+</head>
+
+<body>
+    <header>
+        <h3>Game of Life</h3>
+        <div>
+            <label for="isGrid">Grid</label>
+            <input id="isGrid" type="checkbox" checked>
+            <div>
+                <label for="gridSizeSlider">Grid size : <span id="gridSizeValue">50</span></label>
+                <input id="gridSizeSlider" type="range" min="2" max="150" value="50">
+            </div>
+          </div>
+        <button id="playPause" onclick="playPause()">Play</button>
+        <p>Iterations : <span id="iterationNb">0</span></p>
+        <div>
+            <label for="speedRateSlider">Speed Rate : <span id="speedRateValue">5</span></label>
+            <input id="speedRateSlider" type="range" min="1" max="150" value="5">
+        </div>
+        <button id="reset" onclick="reset()">Reset</button>
+    </header>
+
+    <table id="gameArea"></table>
+
+    <script src="game_of_life.js"></script>
+</body>
+
+</html>
